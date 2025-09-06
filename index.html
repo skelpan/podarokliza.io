@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="background">
+        <div class="floating-element">🎈</div>
+        <div class="floating-element">🎁</div>
+        <div class="floating-element">🎂</div>
+        <div class="floating-element">🎉</div>
+        <div class="floating-element">✨</div>
+        <div class="floating-element">🥳</div>
+    </div>
+
+    <!-- Главный экран -->
+    <div class="main-screen" id="mainScreen">
+        <div class="intro-content">
+            <h1 class="typing-animation">С Днем Рождения!</h1>
+            <div class="cake-animation">
+                <div class="cake">
+                    <div class="cake-layer layer-1"></div>
+                    <div class="cake-layer layer-2"></div>
+                    <div class="cake-layer layer-3"></div>
+                    <div class="candles">
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="startBtn" class="start-button">Открыть открытку</button>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="container hidden" id="contentContainer">
+        <!-- Заголовок -->
+        <div class="header">
+            <h1>С Днем Рождения!</h1>
+            <div class="subtitle">Пусть этот день будет наполнен радостью!</div>
+        </div>
+
+        <!-- Фото -->
+        <div class="photo-section">
+            <div class="photo-frame">
+                <div class="polaroid">
+                    <!-- ВСТАВЬТЕ ССЫЛКУ НА ИЗОБРАЖЕНИЕ ЗДЕСЬ -->
+                    <img id="birthdayPhoto" src="img/Снимок экрана 2025-09-06 234807.png" alt="Фото именинника" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Поздравление -->
+        <div class="message-container">
+            <div class="message-card">
+                <h3>Поздравление!</h3>
+                <div class="message-text">
+                    <p>В этот особенный день желаю тебе всего наилучшего!</p>
+                    <p>Пусть каждый момент будет наполнен счастьем, улыбками и яркими впечатлениями.</p>
+                    <p>Здоровья, успехов и прекрасного настроения!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Интерактивные элементы -->
+        <div class="interactive-section">
+            <h3>Развлечения</h3>
+            <div class="interactive-buttons">
+                <button id="confettiBtn" class="action-button">
+                    <i class="fas fa-birthday-cake"></i> Конфетти
+                </button>
+                <button id="candleBtn" class="action-button">
+                    <i class="fas fa-fire"></i> Задуть свечи
+                </button>
+                <button id="wishBtn" class="action-button">
+                    <i class="fas fa-star"></i> Загадать желание
+                </button>
+            </div>
+        </div>
+
+        <!-- Цитата -->
+        <div class="quote-section">
+            <div class="quote-card">
+                <i class="fas fa-quote-left"></i>
+                <p class="quote-text">Жизнь измеряется не количеством вдохов, которые мы делаем, а моментами, которые захватывают наше дыхание.</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+        </div>
+
+        <!-- Футер -->
+        <div class="footer">
+            <div class="balloons-container">
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+            </div>
+            <p>Создано специально для этого дня!</p>
+        </div>
+    </div>
+
+    <!-- Уведомления -->
+    <div class="notification" id="notification"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
